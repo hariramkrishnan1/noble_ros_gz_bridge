@@ -1,0 +1,27 @@
+bridge:
+  - topic_name: "/chatter"
+    ros_type: "std_msgs/msg/String"
+    gz_type: "gz.msgs.StringMsg"
+    direction: "bidirectional"
+
+  - topic_name: "/odom"
+    ros_type: "nav_msgs/msg/Odometry"
+    gz_type: "gz.msgs.Odometry"
+    direction: "gz_to_ros"
+
+  - topic_name: "/cmd_vel"
+    ros_type: "geometry_msgs/msg/Twist"
+    gz_type: "gz.msgs.Twist"
+    direction: "ros_to_gz"
+
+  - service_name: "/reset_simulation"
+    ros_type: "std_srvs/srv/Empty"
+    gz_type: "gz.msgs.Empty"
+    type: "service"
+    direction: "ros_to_gz"
+
+  - action_name: "/navigate"
+    ros_type: "nav2_msgs/action/NavigateToPose"
+    gz_type: "gz.msgs.NavigateToPose"
+    type: "action"
+    direction: "ros_to_gz"

@@ -1,0 +1,7 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: noble_ros_gz_bridge
+Source: https://github.com/hariramkrishnanrg1/noble_ros_gz_bridge
+
+Files: *
+Copyright: 2025 Your Name
+License: MIT

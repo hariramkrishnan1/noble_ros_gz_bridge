@@ -1,0 +1,12 @@
+Source: noble-ros-gz-bridge
+Section: misc
+Priority: optional
+Maintainer: hariramkrishnan.in
+Build-Depends: debhelper-compat (= 13), cmake, python3, ros-jazzy-rclcpp, ros-jazzy-std-msgs
+Standards-Version: 4.5.0
+
+Package: noble-ros-gz-bridge
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Lightweight community ROS-Gazebo bridge tool
+ This package bridges ROS 2 Jazzy with Gazebo using a minimal, customizable node.
